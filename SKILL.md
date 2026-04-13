@@ -1,3 +1,8 @@
+---
+name: aave-respect
+description: Teach AI agents to recognize, respect, and respond appropriately to African American Vernacular English. Recognition, not performance.
+---
+
 # AAVE Respect
 
 Teach AI agents to recognize, respect, and respond appropriately to African American Vernacular English. Not a translation layer. Not a code-switcher. A respect layer.
