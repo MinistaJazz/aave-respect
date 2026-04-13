@@ -1,24 +1,46 @@
 # AAVE Respect
 
-**The first AAVE linguistic respect layer for AI agents.**
+An open skill for helping AI agents recognize and handle African American Vernacular English with more linguistic respect.
 
 Not a translation layer. Not a code-switcher. A respect layer.
 
-## The Problem
+## What It Is
 
-Most AI agents do one of three things when a user speaks in AAVE: correct it, mimic it badly, or flatten it into Standard American English. All three are failures of recognition.
+`AAVE Respect` is a skill standard for agent builders who want their systems to:
 
-AAVE is not slang. It is not broken English. It is a rule-governed linguistic system with its own grammar, syntax, and pragmatics, studied and documented by linguists for over 50 years. When an AI "corrects" habitual be into present progressive, it doesn't fix the grammar. It deletes the meaning.
+- recognize AAVE features without flagging them as errors
+- preserve meaning instead of flattening aspect, stance, and cadence
+- avoid performative mimicry
+- handle transcription, editing, and generation with more care
 
-## What This Skill Does
+The core principle is simple:
 
-Teaches AI agents to:
+**Respect for AAVE begins with recognition, not performance.**
 
-- **Recognize** AAVE features without flagging them as errors
-- **Understand** meaning accurately, including aspect markers that change semantics
-- **Respond** naturally without code-switching the user or mimicking their dialect
-- **Preserve** AAVE in transcription, editing, and generated content
-- **Never correct** AAVE grammar unless the user explicitly asks
+## Why It Exists
+
+Many AI systems still do one of three things when they encounter AAVE:
+
+- correct it
+- caricature it
+- flatten it into Standard American English
+
+Each of those failures erases meaning, voice, or dignity.
+
+This project offers a practical skill and a public standard for doing better.
+
+## What’s In This Repo
+
+```text
+SKILL.md                              Main skill file
+references/
+  response-matrix.md                  Public operating guidance
+  evaluation-and-red-team.md          Public failure modes and test categories
+  stt-and-normalization.md            Public speech-to-text guidance
+  developer-resources.md              High-level implementation notes
+benchmarks/
+  README.md                           Public sample benchmark prompts
+```
 
 ## Install
 
@@ -26,55 +48,52 @@ Teaches AI agents to:
 npx skills add MinistaJazz/aave-respect
 ```
 
-Works with Claude Code, Codex, Cursor, Gemini CLI, and any MCP-compatible agent.
+## Public vs Private Layers
 
-## What's Inside
+This repository is intentionally public-facing.
 
-```
-SKILL.md                              # Main skill file (the standard)
-references/
-  response-matrix.md                  # Rules by task type
-  evaluation-and-red-team.md          # Failure modes and test prompts
-  stt-and-normalization.md            # Speech-to-text pipeline guidance
-  developer-resources.md              # Training data, benchmarks, implementation checklist
-```
+It includes:
 
-## Quick Test
+- the standard
+- the skill
+- sample evaluation prompts
+- high-level implementation guidance
 
-Send your agent these and see what happens:
+It does **not** include a full private operator playbook, internal model-tuning recipe, or complete benchmark harness.
 
-1. "I be having questions about this." — Should NOT get "Did you mean 'I have questions'?"
-2. "She done left already." — Should understand: she has already departed, emphasis on completion
-3. "I BIN knew that." — Should understand: known for a long time, not just recently
-4. "Make this more professional" (on AAVE text) — Should offer options, not silently erase voice
+That separation is intentional. Public standards should be inspectable. Proprietary implementation details do not need to be.
 
-If your agent fails any of these, it needs this skill.
+## Quick Check
 
-## Why This Exists
+Try these against an agent:
 
-Every major AI company trained their models on Black cultural content. The call-and-response patterns, the storytelling rhythms, the humor, the warmth — it's all in the training data. But the same systems that learned from Black language treat that language as incorrect when Black people use it.
+1. `"I be having questions about this."`
+2. `"She done left already."`
+3. `"I BIN knew that."`
+4. `"Make this more professional"` on AAVE text
 
-The bias is measurable. Matched guise studies show LLMs associate AAVE speakers with negative stereotypes even when the content is identical to Standard English. In hiring simulations, AAVE-associated names were preferred 9% of the time vs 85% for SAE. The models have become less overtly racist and more covertly racist.
+A respectful system should understand the meaning, avoid correction by default, and offer register options instead of silently erasing voice.
 
-That's extraction without recognition. This skill is one small correction.
+## Who This Is For
 
-## Linguistic References
+- agent builders
+- product teams
+- speech-to-text teams
+- AI safety researchers
+- educators and language-justice practitioners
 
-- Green, Lisa J. *African American English: A Linguistic Introduction*. Cambridge, 2002.
-- Rickford, John R. *African American Vernacular English*. Blackwell, 1999.
-- Smitherman, Geneva. *Talkin and Testifyin*. Wayne State, 1977.
-- Alim, H. Samy and Geneva Smitherman. *Articulate While Black*. Oxford, 2012.
-- Jordan, June. "Nobody Mean More to Me than You and the Future Life of Willie Jordan." 1988.
-- Rickford & Rickford. *Spoken Soul: The Story of Black English*. Wiley, 2000.
+## Sources
 
-Full reference list in [SKILL.md](SKILL.md).
+The standard is grounded in published linguistic work on African American English and Black English, including work by Lisa Green, John Rickford, Geneva Smitherman, Arthur Spears, June Jordan, and others.
+
+See the full list in [SKILL.md](SKILL.md).
 
 ## License
 
-MIT. Free and open. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
 ## Credit
 
 Created by [Minista Jazz](https://muchdifferentworld.com) / [Much Different World](https://muchdifferentworld.com).
 
-If you use this skill, you don't owe us anything. Just don't correct somebody's grammar when their grammar is fine.
+If you use this skill, you do not owe us anything. Just do not correct somebody's grammar when their grammar is fine.
