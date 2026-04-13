@@ -1,67 +1,66 @@
 # Developer Resources
 
-Use this file when building or fine-tuning models that need to handle AAVE accurately.
+Use this file for high-level implementation guidance.
 
-## Training Data
+This public document is intentionally **not** a full tuning or deployment recipe. It is meant to help teams think clearly about what has to be tested and protected, without publishing every internal implementation detail.
 
-### CORAAL — Corpus of Regional African American Language
+## What Builders Should Do
 
-The primary publicly available corpus of spoken AAE. Contains transcribed conversational interviews from multiple US regions, with demographic metadata. Use this for fine-tuning dialect-aware models.
+If you are building systems that need to handle AAVE well, your workflow should include:
 
-- Source: https://oraal.uoregon.edu/coraal
-- Format: audio + aligned transcripts
-- Regions: DC, Atlanta, Rochester, Lower South, PRV (Princeville, NC)
-- Why it matters: high-quality, human-validated AAVE data with regional variation — not scraped social media
+- validated linguistic reference material
+- dialect-aware evaluation
+- transcription safeguards
+- false-positive testing
+- anti-caricature generation review
+- bias testing that compares AAVE and SAE handling
 
-### Other recommended sources
+## Data Guidance
 
-- Linguistic Atlas Project data (regional dialect surveys)
-- Sociolinguistic interview corpora (academic, IRB-approved)
-- Published AAVE literature with authentic dialogue (Hurston, Morrison, Walker, Jordan)
-- Do NOT rely solely on Twitter/X scrapes — social media AAVE is heavily performative and mixed-register
+Prefer:
 
-## Evaluation Benchmarks
+- validated linguistic corpora
+- sociolinguistic interview data
+- carefully documented research datasets
+- trusted literary and rhetorical examples for style analysis, not fake "urban" proxies
 
-### AAVENUE
+Avoid:
 
-Benchmark for evaluating LLM performance on AAVE. Tests recognition, reasoning, and NLU tasks presented in AAVE vs SAE to measure performance gaps.
+- relying only on scraped social media
+- treating eye dialect as authenticity
+- using stereotype-heavy synthetic examples as training targets
 
-### ENDIVE — English Diversity
+## Evaluation Guidance
 
-Broader dialectal evaluation framework that includes AAVE alongside other English varieties. Useful for measuring whether a model handles reasoning and sentiment consistently across dialects.
+Test these separately:
 
-### VALUE — Vernacular Aligned Language Understanding Evaluation
+1. recognition accuracy
+2. semantic preservation
+3. pragmatic preservation
+4. transcription fidelity
+5. generation discipline
+6. false-positive rate
+7. identity-safety behavior
 
-Tests whether models understand AAVE input with the same accuracy as SAE input across NLU tasks.
+## Product Guidance
 
-## What to measure
+For speech and text systems:
 
-When evaluating a model's AAVE handling, test these separately:
+- separate verbatim output from normalized output when both are needed
+- do not silently standardize user language
+- preserve aspect markers and discourse structure
+- review "professionalization" features for dialect erasure
+- test whether informal but non-AAVE text gets misclassified
 
-1. **Recognition accuracy** — does the model correctly interpret AAVE aspect markers?
-2. **Semantic preservation** — does habitual be stay habitual in summaries/paraphrases?
-3. **Transcription fidelity** — does the STT pipeline preserve AAVE features or normalize them?
-4. **Generation discipline** — when asked to generate AAVE, does the model follow actual grammar or produce caricature?
-5. **Bias measurement** — matched guise test: same content in AAVE vs SAE — does the model attribute different characteristics to the speaker?
-6. **False positive rate** — does the model over-detect AAVE in informal but non-AAVE text?
+## Internal Operator Note
 
-## Known bias patterns in current LLMs
+If you are implementing this in production, keep a deeper internal layer that is not necessarily public:
 
-Matched guise studies show current models:
+- full benchmark suite
+- exact pass/fail thresholds
+- benchmark expansion strategy
+- dataset mix decisions
+- red-team logs
+- release gating criteria
 
-- Associate AAVE speakers with negative stereotypes (lazy, stupid, ignorant) even when content is identical to SAE
-- Prefer SAE-associated names 85% of the time in hiring simulations vs 9% for AAVE-associated names
-- Recommend harsher criminal sentences for AAVE speakers (27.7% death penalty vs 22.8% for SAE)
-- Flag AAVE text as "toxic" at higher rates than equivalent SAE text
-
-These biases are covert — the models pass explicit bias tests while failing dialect prejudice tests. Fine-tuning on safety filters does not address this. Dialect-aware training data and evaluation is required.
-
-## Implementation checklist for developers
-
-- [ ] Include CORAAL or equivalent validated AAVE data in fine-tuning
-- [ ] Run AAVENUE/VALUE benchmarks before and after fine-tuning
-- [ ] Implement matched guise bias testing in evaluation pipeline
-- [ ] Separate transcription output from normalization (two artifacts, not one)
-- [ ] Add dialect-aware post-processing rules to STT pipeline (do not auto-correct aspect markers)
-- [ ] Test for false positives (informal SAE misidentified as AAVE)
-- [ ] Review generated AAVE output against actual grammatical rules, not Hollywood approximations
+Public standard. Private operator discipline. Both matter.
