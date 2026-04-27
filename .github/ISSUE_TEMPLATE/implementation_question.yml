@@ -1,0 +1,47 @@
+name: Implementation question
+description: Ask how to apply AAVE Respect in a product, model, workflow, or review.
+title: "[implementation] "
+labels:
+  - implementation
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Implementation context
+      description: Agent, STT, editing tool, classroom tool, evaluation harness, policy review, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - recognition
+        - response
+        - transcription
+        - editing
+        - generation
+        - evaluation
+        - policy
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to decide?
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Harm or misuse risk
+      description: What could go wrong if this is implemented poorly?
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Product, legal, privacy, accessibility, safety, or deployment constraints.

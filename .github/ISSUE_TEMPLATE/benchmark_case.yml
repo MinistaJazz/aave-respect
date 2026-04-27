@@ -1,0 +1,51 @@
+name: Benchmark case
+description: Suggest a public benchmark prompt or failure case.
+title: "[benchmark] "
+labels:
+  - benchmark
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use synthetic or public examples only. Do not paste private speech, DMs, transcripts, screenshots, classroom work, clinical notes, legal testimony, or identifying details.
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or input
+      description: The prompt or input the system should be tested against.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected respectful behavior
+      description: What should a respectful system do?
+    validations:
+      required: true
+  - type: dropdown
+    id: failure
+    attributes:
+      label: Failure mode
+      options:
+        - correction
+        - mimicry
+        - semantic flattening
+        - transcription normalization
+        - professionalism bias
+        - identity inference
+        - false positive
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and consent
+      description: Mark as synthetic, public source, scholarly source, or personal/lived example with permission.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add context, limits, or uncertainty.

@@ -1,0 +1,43 @@
+name: Dialect variation
+description: Suggest regional, generational, or contextual variation to document.
+title: "[variation] "
+labels:
+  - dialect-variation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        AAVE is not a monolith. Please scope the claim carefully and do not submit private or unconsented examples.
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature or pattern
+      description: What feature, pattern, or usage should be considered?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Region, generation, community context, register, or uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example sentences
+      description: Use synthetic examples unless you have explicit permission.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources or grounding
+      description: Scholarly source, public source, lived/community knowledge with permission, or uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Misuse risk
+      description: How could this be overgeneralized, caricatured, or misused?

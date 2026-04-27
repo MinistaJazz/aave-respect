@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.1 - April 27, 2026
+
+### Added
+
+- **CONTRIBUTING.md** - contribution rules for consent, provenance, linguistic scope, and commercial use.
+- **CODE_OF_CONDUCT.md** - project conduct rules centered on linguistic dignity and protection from anti-Blackness, misogynoir, dialect shaming, and extraction.
+- **GOVERNANCE.md** - stewardship model that keeps the public standard open while protecting authority, certification, and private evaluation layers.
+- **TRADEMARK.md** - trademark and certification policy clarifying that MIT use does not grant compliance, certification, endorsement, or approval claims.
+- **SECURITY.md** - private reporting path for sensitive safety issues, unconsented data, false certification claims, and high-stakes misuse.
+- **GitHub issue templates** - structured paths for benchmark cases, dialect variation, implementation questions, and harm or misuse reports.
+- **Pull request template** - protective checklist for consent, sources, scope, and misuse risk.
+
 ## v1.0.0 — April 14, 2026
 
 **The first AAVE linguistic respect layer for AI agents.**

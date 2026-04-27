@@ -1,0 +1,40 @@
+name: Harm or misuse
+description: Report public misuse, false claims, or harmful implementation patterns.
+title: "[harm] "
+labels:
+  - safety
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include private or identifying details in a public issue. For sensitive reports, email legal@muchdifferentworld.com.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Issue type
+      options:
+        - false certification or endorsement claim
+        - unconsented data or examples
+        - dialect correction or erasure
+        - caricature or mimicry
+        - high-stakes implementation risk
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? Keep private people and private data out of this issue.
+    validations:
+      required: true
+  - type: textarea
+    id: public_links
+    attributes:
+      label: Public links
+      description: Share only public links you have the right to share.
+  - type: textarea
+    id: requested
+    attributes:
+      label: Requested action
+      description: What should maintainers consider doing?
