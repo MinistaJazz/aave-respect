@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.2 - May 13, 2026
+
+### Changed
+
+- Tightened the "Why This Matters" evidence language to distinguish dialect-bias findings from adjacent name-based hiring-bias findings.
+- Added Hofmann et al. 2024 (*Nature*) to the references for dialect-bias claims.
+- Softened the v1.0.0 ecosystem claim to avoid overclaiming beyond observed public skill-search results.
+
 ## v1.0.1 - April 27, 2026
 
 ### Added
@@ -30,7 +38,7 @@
 
 ### Why this exists
 
-No skill in the open agent ecosystem addressed linguistic respect for any dialect. This is the first. Built by Minista Jazz / Much Different World, reviewed across multiple model families, scholar-checked against Green 2002, Rickford 1999, Smitherman 1977, and Alim & Smitherman 2012.
+At release, I had not found a public agent skill centered on AAVE linguistic respect. Built by Minista Jazz / Much Different World, reviewed across multiple model families, scholar-checked against Green 2002, Rickford 1999, Smitherman 1977, and Alim & Smitherman 2012.
 
 ### What's next
 

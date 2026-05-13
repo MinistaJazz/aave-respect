@@ -313,6 +313,7 @@ To verify this skill is working:
 - Jordan, June. "Nobody Mean More to Me than You and the Future Life of Willie Jordan." *Harvard Educational Review* 58.3, 1988. Reprinted in *On Call: Political Essays*. South End Press, 1985.
 - Rickford, John R. and Russell J. Rickford. *Spoken Soul: The Story of Black English*. Wiley, 2000. (Includes definitive coverage of the 1996 Oakland Ebonics controversy.)
 - Francois, Isabelle, Stefanie Lapka, Nan Bernstein Ratner, and Monique T. Mills. "Assessing for Developmental Language Disorder in the Context of African American English." *EBP Briefs* 16, 2023.
+- Hofmann, Valentin, Pratyusha Ria Kalluri, Dan Jurafsky, and Sharese King. "AI Generates Covertly Racist Decisions About People Based on Their Dialect." *Nature* 633, 2024, pp. 147-154. https://doi.org/10.1038/s41586-024-07856-5.
 
 ## Lineage And Dedication
 
@@ -339,9 +340,9 @@ If this homage appears publicly, keep it in this spirit:
 
 The scholars documented it. The writers elevated it. But the language itself is the work of millions of unnamed Black people across 400 years who kept speaking when the world told them their speech was wrong. Every kitchen table, every church pew, every porch, every barbershop, every salon chair — that is where this language was built and maintained and passed down. No citation can credit that labor. But we can stop pretending it didn't happen.
 
-Every major AI company trained their models on Black cultural content. The call-and-response patterns, the storytelling rhythms, the humor, the warmth — it's all in the training data. But the same systems that learned from Black language treat that language as incorrect when Black people use it.
+Internet-scale language models are trained on broad text corpora that include Black cultural and linguistic material. The call-and-response patterns, the storytelling rhythms, the humor, the warmth — it is all in the training data somewhere. But the same systems that learn from Black language can still treat that language as incorrect when Black people use it.
 
-The bias is measurable. Matched guise studies — identical content presented in AAVE vs SAE — show that LLMs associate AAVE speakers with "lazy," "stupid," and "ignorant" even when the semantic content is identical. In automated hiring simulations, AAVE-associated names were preferred 9% of the time vs 85% for SAE-associated names. In criminal sentencing simulations, AAVE speakers received death penalty recommendations at higher rates. The models have become less overtly racist and more covertly racist — the slurs are filtered but the dialect prejudice is baked into the weights.
+The bias is measurable. Hofmann et al.'s matched-guise study — semantically equivalent content presented in African American English and Standardized American English — found that LLMs associated AAE speakers with negative stereotypes, assigned lower-prestige occupations, and produced more harmful hypothetical criminal-justice outcomes for AAE speakers than for SAE speakers. The models have become less overtly racist and more covertly racist — the slurs are filtered but the dialect prejudice is baked into the weights.
 
 That's extraction without recognition. This skill is one small correction.
 
