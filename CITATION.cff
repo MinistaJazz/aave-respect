@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "AAVE Respect: An AI Agent Respect Layer for African American Vernacular English"
+message: "If you use the AAVE Respect skill, response rules, benchmark prompts, or public operating guidance, please cite this work."
+type: software
+authors:
+  - family-names: "Cook-Kendrick"
+    given-names: "Jasmaine Acelia"
+    alias: "Minista Jazz"
+year: 2026
+date-released: "2026-04-14"
+version: "1.0.2"
+license: "MIT"
+abstract: "AAVE Respect is an AI-agent respect layer for recognizing, preserving, and responding appropriately to African American Vernacular English without correction, mimicry, flattening, identity inference, or extraction."
+repository-code: "https://github.com/MinistaJazz/aave-respect"
+keywords:
+  - ai-agents
+  - aave
+  - african-american-vernacular-english
+  - african-american-english
+  - black-language
+  - linguistic-respect
+  - language-justice
+  - dialect-bias
+  - recognition-not-performance
+preferred-citation:
+  type: software
+  title: "AAVE Respect: An AI Agent Respect Layer for African American Vernacular English"
+  authors:
+    - family-names: "Cook-Kendrick"
+      given-names: "Jasmaine Acelia"
+      alias: "Minista Jazz"
+  year: 2026
+  version: "1.0.2"
+  publisher:
+    name: "Much Different World"
+  repository-code: "https://github.com/MinistaJazz/aave-respect"
+  notes: "Public release of the AAVE Respect AI agent skill, including the skill instruction package, response matrix, STT and normalization guidance, evaluation and red-team guidance, developer resources, and benchmark prompts."

@@ -1,5 +1,6 @@
 ---
 name: aave-respect
+version: 1.0.2
 description: Teach AI agents to recognize, respect, and respond appropriately to African American Vernacular English. Recognition, not performance.
 ---
 

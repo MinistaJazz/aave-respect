@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.2-public - May 16, 2026
+
+### Added
+
+- Added `CITATION.cff` for citation tools and archive metadata.
+- Added `PUBLICATION_BOUNDARY.md` clarifying that the authored contribution is the AI-agent respect layer, not ownership of AAVE or Black language.
+- Added `version: 1.0.2` to `SKILL.md` frontmatter.
+
 ## v1.0.2 - May 13, 2026
 
 ### Changed

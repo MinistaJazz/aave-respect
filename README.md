@@ -63,6 +63,12 @@ It does **not** include a full private operator playbook, internal model-tuning 
 
 That separation is intentional. Public standards should be inspectable. Proprietary implementation details do not need to be.
 
+## What This Does Not Claim
+
+This project does not claim ownership of AAVE, African American English, Black English, Black language, or the linguistic scholarship and community practice it cites. Those belong to the speakers, communities, scholars, artists, educators, and lineages that have carried them.
+
+The authored contribution here is the AI-agent respect layer: a portable skill package that teaches recognition without correction, performance, flattening, or extraction.
+
 ## Stewardship Guardrails
 
 This project is MIT licensed so it can spread. The license lets people use the public standard. It does not let anyone claim certification, endorsement, partnership, or verified compliance.
@@ -123,3 +129,7 @@ MIT. See [LICENSE](LICENSE).
 Created by [Minista Jazz](https://muchdifferentworld.com) / [Much Different World](https://muchdifferentworld.com).
 
 If you use this skill, you do not owe us anything. Just do not correct somebody's grammar when their grammar is fine.
+
+Recommended citation:
+
+> Cook-Kendrick, Jasmaine Acelia (Minista Jazz). "AAVE Respect: An AI Agent Respect Layer for African American Vernacular English." Much Different World, 2026.
