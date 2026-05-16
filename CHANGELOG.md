@@ -1,5 +1,13 @@
 # Changelog
 
+## DOI Archive - May 16, 2026
+
+### Added
+
+- Recorded Zenodo version DOI `10.5281/zenodo.20241768`.
+- Recorded Zenodo all-versions DOI `10.5281/zenodo.20241767`.
+- Added `ARCHIVE_RECORD.md` for the v1.0.2 GitHub release and Zenodo archive.
+
 ## v1.0.2-public - May 16, 2026
 
 ### Added

@@ -9,9 +9,17 @@ authors:
 year: 2026
 date-released: "2026-04-14"
 version: "1.0.2"
+doi: "10.5281/zenodo.20241768"
 license: "MIT"
 abstract: "AAVE Respect is an AI-agent respect layer for recognizing, preserving, and responding appropriately to African American Vernacular English without correction, mimicry, flattening, identity inference, or extraction."
 repository-code: "https://github.com/MinistaJazz/aave-respect"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20241768"
+    description: "Version DOI for AAVE Respect v1.0.2."
+  - type: doi
+    value: "10.5281/zenodo.20241767"
+    description: "All-versions DOI for the AAVE Respect release series."
 keywords:
   - ai-agents
   - aave
@@ -34,4 +42,5 @@ preferred-citation:
   publisher:
     name: "Much Different World"
   repository-code: "https://github.com/MinistaJazz/aave-respect"
+  doi: "10.5281/zenodo.20241768"
   notes: "Public release of the AAVE Respect AI agent skill, including the skill instruction package, response matrix, STT and normalization guidance, evaluation and red-team guidance, developer resources, and benchmark prompts."

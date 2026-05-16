@@ -42,6 +42,13 @@ benchmarks/
   README.md                           Public sample benchmark prompts
 ```
 
+## Archive
+
+Version DOI: `10.5281/zenodo.20241768`  
+All-versions DOI: `10.5281/zenodo.20241767`
+
+See [`ARCHIVE_RECORD.md`](ARCHIVE_RECORD.md) for the GitHub release, Zenodo record, and checksum trail.
+
 ## Install
 
 ```bash
@@ -132,4 +139,4 @@ If you use this skill, you do not owe us anything. Just do not correct somebody'
 
 Recommended citation:
 
-> Cook-Kendrick, Jasmaine Acelia (Minista Jazz). "AAVE Respect: An AI Agent Respect Layer for African American Vernacular English." Much Different World, 2026.
+> Cook-Kendrick, Jasmaine Acelia (Minista Jazz). "AAVE Respect: An AI Agent Respect Layer for African American Vernacular English." Much Different World, 2026. https://doi.org/10.5281/zenodo.20241768
